@@ -10,7 +10,9 @@ public class ReverseString {
 		reverseUsingStringBuilder(word);
 		reversWithoutStringBuilder(word);
 	}
-
+	
+	
+//Using StringBuilder
 	private static void reverseAString(String word) {
 
 		StringBuilder sb = new StringBuilder();
@@ -21,6 +23,7 @@ public class ReverseString {
 		System.out.println("Reversed using for loop inside a StringBuilder: " + sb.toString());
 	}
 
+	//Using StringBuilder and .reverse() method
 	private static void reverseUsingStringBuilder(String word) {
 
 		StringBuilder sb = new StringBuilder(word);
@@ -29,6 +32,7 @@ public class ReverseString {
 		System.out.println("Reversed using only StringBuilder method: " + sb.toString());
 	}
 
+	//Using a regular for loop
 	private static void reversWithoutStringBuilder(String word) {
 		String reversed = "";
 		for (int i = word.length() - 1; i >= 0; i--) {
